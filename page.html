@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>КиноЗал</title>
+  <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<header class="header container-fluid">
+  <div class="header-logo row">
+    <div class="container">
+      <strong class="header-logo__title">КиноЗал</strong>
+      <span class="header-logo__description">Найди свое кино</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li><a href="page.html">Фильмы</a></li>
+            <li><a href="#">Сериалы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Рейтинг</a></li>
+            <li><a href="#">Раздачи</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+</header>
+
+<div class="container">
+  <div class="row">
+    <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+
+      <section class="site-search panel panel-info hidden-lg hidden-md">
+        <h2 class="invisible">Section 1</h2>
+        <div class="panel-heading">Поиск</div>
+        <div class="panel-body">
+          <form action="search">
+            <div class="input-group input-group-lg">
+              <input class="form-control" type="search" placeholder="Поиск по сайту" name="search">
+              <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </span>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="user-login panel panel-info hidden-lg hidden-md">
+        <h2 class="invisible">Section 2</h2>
+        <div class="panel-heading">Пользователь</div>
+        <div class="panel-body">
+
+          <ul class="user-login__tabs nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>
+            </li>
+            <li role="presentation">
+              <a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            </li>
+          </ul>
+
+          <div class="user-login__content tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+              <form action="login">
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Логин" name="login">
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Пароль" name="password">
+                </div>
+
+                <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
+
+              </form>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+              <form action="registration">
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Логин" name="login">
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Пароль" name="password">
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="email" placeholder="Email" name="email">
+                </div>
+
+                <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="film-trailer">
+        <div class="film-trailer-caption">
+          <h1 class="film-trailer-title">Иллюзия обмана 2</h1>
+        </div>
+        <div class="film-trailer-row row">
+
+          <div class="film-trailer-item">
+            <div class="embed-responsive embed-responsive-16by9 main-video">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/47DzVAIzSQI" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+
+          <div class="well text-center film-trailer-item-well">
+            <span class="film-trailer-item__info">Год: <span class="badge film-trailer-item__badge">2016</span></span>
+            <span class="film-trailer-item__info">Рейтинг: <span class="badge film-trailer-item__badge">8.8</span></span>
+            <span class="film-trailer-item__info">Режиссер: <span class="badge film-trailer-item__badge">Джон М. Чу</span></span>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="about-film">
+        <div class="about-film-caption">
+          <h2 class="about-film-title">Описание фильма</h2>
+        </div>
+          <div class="well about-film-item-well">«Четыре всадника» — команда иллюзионистов, которая смогла не только покорить многомиллионную публику своими выступлениями, но и провернуть пожалуй самую крупную аферу за последние несколько десятилетий. Тогда они смогли добиться желаемого результата и провести вокруг пальца известного разоблачителя фокусов. Спустя несколько лет группа иллюзионистов собирается вновь и теперь они готовы удивить зрителя новыми более удивительными номерами. Их магия стала еще более совершенна, но вместе с ней опасней стали и враги. На этот раз «всадникам» предстоит очень сильно постараться, чтобы спасти свою репутацию и вывести на «чистую воду» влиятельного и жестокого техномагната...</div>
+
+      </section>
+
+      <section class="comments">
+        <div class="comments-caption">
+          <h2 class="comments-title">Отзывы о фильме</h2>
+        </div>
+
+        <div class="comments panel panel-info">
+          <div class="panel-heading"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Владимир</div>
+          <div class="panel-body">
+              Фильм реализован неплохо, однако удивления и особой радости как от первой части лично у меня не возникло. Возможно, это связано с тем, что все ходы и весь концепт фильма кочует из первого фильма и не изменяется, но что поделаешь, видимо, это беда всех сиквелов. Кому-то фильм может показаться затянутым и очень сложным для восприятия, так оно и есть. Сценаристы запихали туда очень много поворотов и не раскрыли их до конца. Слишком много вопросов у зрителя возникает по ходу сюжета и слишком мало ответов он получает. Хотя, может в этом и есть фокус, ведь настоящие фокусники секретов не раскрывают.
+          </div>
+        </div>
+
+        <div class="comments panel panel-info">
+          <div class="panel-heading"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Евгения</div>
+          <div class="panel-body">
+              Я очень люблю фильмы о фокусах и людях, которые владеют их секретами. Искусство создавать хитрые иллюзии, которые невозможно понять с ходу, поневоле вызывает уважение, даже если это простая ловкость рук. Таких фильмов я знаю совсем немного, но все они хорошие. А в 2013 году режиссер Луи Летерье представил миру красочный и захватывающий блокбастер «Иллюзия обмана» — мой фаворит в данном жанровом сегменте.
+          </div>
+        </div>
+
+
+      </section>
+
+      <section class="leave-comment">
+        <div class="leave-comment-caption">
+          <h2 class="leave-comment-title">Оставить комментарий</h2>
+
+          <form action="comment">
+
+            <div class="form-group">
+              <input class="form-control input-lg" type="text" placeholder="Ваше имя" name="login">
+            </div>
+
+            <div class="form-group">
+              <input class="form-control input-lg" type="email" placeholder="Укажите Email" name="email">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" rows="10" placeholder="Напишите свой комментарий здесь..." name="text-comment"></textarea>
+            </div>
+
+            <button class="leave-comment__btn btn btn-lg btn-warning" type="submit">Отправить</button>
+
+          </form>
+        </div>
+
+
+
+      </section>
+
+    </main>
+
+
+    <aside class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
+      <div class="vertical-slider panel panel-info hidden-sm hidden-xs">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img class="vertical-slider__image" src="assets/img/films/1263242.jpg" alt="Film 1">
+            </div>
+
+            <div class="item">
+              <img class="vertical-slider__image" src="assets/img/films/1266931.jpg" alt="Film 2">
+            </div>
+
+            <div class="item">
+              <img class="vertical-slider__image" src="assets/img/films/1289488.jpg" alt="Film 3">
+            </div>
+
+          </div>
+
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="site-search panel panel-info hidden-sm hidden-xs">
+        <div class="panel-heading">Поиск</div>
+        <div class="panel-body">
+          <form action="search">
+            <div class="input-group input-group-lg">
+              <input class="form-control" type="search" placeholder="Поиск по сайту" name="search">
+              <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="user-login panel panel-info hidden-sm hidden-xs">
+        <div class="panel-heading">Пользователь</div>
+        <div class="panel-body">
+
+          <ul class="user-login__tabs nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#user-login-sidebar" aria-controls="user-login-sidebar" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span></a>
+            </li>
+            <li role="presentation">
+              <a href="#user-registration-sidebar" aria-controls="user-registration-sidebar" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            </li>
+          </ul>
+
+          <div class="user-login__content tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="user-login-sidebar">
+              <form action="login">
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Логин" name="login">
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Пароль" name="password">
+                </div>
+
+                <button class="btn btn-default btn-lg btn-block" type="submit">Вход</button>
+
+              </form>
+            </div>
+
+            <div role="tabpanel" class="tab-pane fade" id="user-registration-sidebar">
+              <form action="registration">
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Логин" name="login">
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" placeholder="Пароль" name="password">
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control input-lg" type="email" placeholder="Email" name="email">
+                </div>
+
+                <button class="btn btn-default btn-lg btn-block" type="submit">Регистрация</button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">Новости сайта</div>
+        <div class="panel-body">
+          <div class="site-news-item">
+            <div class="site-news-item__image thumbnail">
+              <img src="assets/img/75x75.png" alt="News"></div>
+            <div class="site-news-item__title">
+              <a href="#">Мы запустили новый сервис - КиноМонстр</a></div>
+            <div class="site-news-item__date">5 декабря 2016</div>
+          </div>
+
+
+          <div class="site-news-item">
+            <div class="site-news-item__image thumbnail">
+              <img src="assets/img/75x75.png" alt="News"></div>
+            <div class="site-news-item__title">
+              <a href="#">На сайте добавлен новый функционал</a></div>
+            <div class="site-news-item__date">6 декабря 2016</div>
+          </div>
+
+
+          <div class="site-news-item">
+            <div class="site-news-item__image thumbnail">
+              <img src="assets/img/75x75.png" alt="News"></div>
+            <div class="site-news-item__title">
+              <a href="#">Скорость скачивания фильмов увеличена</a></div>
+            <div class="site-news-item__date">7 декабря 2016</div>
+          </div>
+
+
+          <div class="site-news-item">
+            <div class="site-news-item__image thumbnail">
+              <img src="assets/img/75x75.png" alt="News"></div>
+            <div class="site-news-item__title">
+              <a href="#">Оптимизирована производительность сервера</a></div>
+            <div class="site-news-item__date">8 декабря 2016</div>
+          </div>
+
+
+          <div class="site-news-item">
+            <div class="site-news-item__image thumbnail">
+              <img src="assets/img/75x75.png" alt="News"></div>
+            <div class="site-news-item__title">
+              <a href="#">Количество пользователей перевалила за 10 000</a></div>
+            <div class="site-news-item__date">9 декабря 2016</div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="top-films panel panel-info">
+        <div class="panel-heading">Рейтинг фильмов</div>
+        <div class="top-films__body panel-body">
+          <div class="top-films__list list-group">
+            <a href="#" class="top-films__item list-group-item">Марсианин
+              <span class="top-films__badge badge">8.9</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Иллюзия обмана 2
+              <span class="top-films__badge badge">8.8</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Из машины
+              <span class="top-films__badge badge">8.5</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Люси
+              <span class="top-films__badge badge">8.2</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Выхода нет
+              <span class="top-films__badge badge">8.0</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Стражи галактики
+              <span class="top-films__badge badge">7.9</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Человек муравей
+              <span class="top-films__badge badge">7.7</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Месть от кутюр
+              <span class="top-films__badge badge">7.5</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Люди Икс
+              <span class="top-films__badge badge">7.4</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Занесло
+              <span class="top-films__badge badge">7.3</span>
+            </a>
+
+            <a href="#" class="top-films__item list-group-item">Дочь Бога
+              <span class="top-films__badge badge">7.2</span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="footer container-fluid">
+  <div class="row">
+    <div class="container footer-container">
+      <div class="row footer-row">
+        <div class="col-md-3 col-xs-6 footer-nav">
+          <h4 class="footer-nav__title">Lorem ipsum dolor sit.</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#">Lorem ipsum dolor.</a></li>
+            <li class="footer-nav__item"><a href="#">Delectus, labore, incidunt.</a></li>
+            <li class="footer-nav__item"><a href="#">Eos neque, eius.</a></li>
+            <li class="footer-nav__item"><a href="#">Minus, omnis vel.</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-6 footer-nav">
+          <h4 class="footer-nav__title">Voluptatem, commodi, at.</h4>
+          <ul  class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#">Lorem ipsum dolor.</a></li>
+            <li class="footer-nav__item"><a href="#">Delectus, labore, incidunt.</a></li>
+            <li class="footer-nav__item"><a href="#">Eos neque, eius.</a></li>
+            <li class="footer-nav__item"><a href="#">Minus, omnis vel.</a></li>
+            <li class="footer-nav__item"><a href="#">Aspernatur, fugiat, possimus!</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-6 footer-nav">
+          <h4 class="footer-nav__title">Sed, ducimus perspiciatis.</h4>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#">Lorem ipsum dolor.</a></li>
+            <li class="footer-nav__item"><a href="#">Delectus, labore, incidunt.</a></li>
+            <li class="footer-nav__item"><a href="#">Eos neque, eius.</a></li>
+            <li class="footer-nav__item"><a href="#">Minus, omnis vel.</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-6 footer-nav">
+          <h4 class="footer-nav__title">Reiciendis, minima, a?</h4>
+          <ul  class="footer-nav__list">
+            <li class="footer-nav__item"><a href="#">Lorem ipsum dolor.</a></li>
+            <li class="footer-nav__item"><a href="#">Delectus, labore, incidunt.</a></li>
+            <li class="footer-nav__item"><a href="#">Eos neque, eius.</a></li>
+            <li class="footer-nav__item"><a href="#">Minus, omnis vel.</a></li>
+            <li class="footer-nav__item"><a href="#">Aspernatur, fugiat, possimus!</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="row copyright">
+        <a href="https://fomenko.top/">Учебный шаблон Bootstrap v3.4.1. Разработка - Андрей Фоменко</a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

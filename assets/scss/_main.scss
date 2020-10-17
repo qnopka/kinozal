@@ -1,0 +1,273 @@
+.main
+{
+    @extend %margin-bottom-lg;
+
+    .site-search
+    {
+        margin-bottom: $gap * 4;
+    }
+
+    .user-login
+    {
+        margin-bottom: $gap * 4;
+    }
+}
+
+.new-films,
+.top-films
+{
+    &-row
+    {
+        margin-right: -$gap / 2;
+        margin-left: -$gap / 2;
+    }
+
+    &-item
+    {
+        margin-bottom: $gap;
+        padding-right: $gap / 2;
+        padding-left: $gap / 2;
+
+        &__thumbnail
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.films-caption,
+.film-trailer-caption,
+.comments-caption,
+.about-film-caption,
+.leave-comment-caption
+{
+    overflow: hidden;
+}
+.new-films,
+.top-films,
+.films-news,
+.film-trailer,
+.comments,
+.about-film,
+.leave-comment
+{
+    &-title
+    {
+        position: relative;
+
+        clear: both;
+
+        &:after
+        {
+            bottom: 9px;
+
+            width: 100%;
+            margin-left: $gap;
+
+            @include caption-decoration;
+        }
+    }
+
+    &-item
+    {
+        &__thumbnail
+        {
+            transition: background-color .3s, color .3s;
+
+            &:hover,
+            &:focus
+            {
+                height: 100%;
+
+                cursor: pointer;
+
+                background-color: $color-accent;
+
+                & h3
+                {
+                    color: $color-light;
+                }
+            }
+
+
+            & a > img
+            {
+                width: 100%;
+            }
+        }
+
+        &__title
+        {
+            font-weight: 700;
+
+            text-align: center;
+
+            @include text-shortener;
+        }
+    }
+}
+
+.top-films,
+.films-news,
+.comments,
+.about-film,
+.leave-comment
+{
+    &-title
+    {
+        &:before
+        {
+            top: 10px;
+            left: -$gap * 3;
+
+            width: $gap * 2;
+            margin-right: $gap;
+
+            @include caption-decoration;
+        }
+
+        &:after
+        {
+            bottom: 7px;
+
+            width: 100%;
+            margin-left: $gap;
+
+            @include caption-decoration;
+        }
+    }
+}
+
+
+.films-news
+{
+    &-item
+    {
+        transition: color .3s, background-color .3s;
+
+
+        &:hover
+        {
+            a
+            {
+                transition: color .3s;
+
+                color: $color-accent;
+            }
+
+            .films-news-item__image
+            {
+                cursor: pointer;
+                transition: background-color .3s;
+
+                border-color: rgba($color-accent, .7);
+                background-color: rgba($color-accent, .7);
+            }
+
+            .films-news-item__btn
+            {
+                transition: color .3s, background-color .3s;
+
+                color: $color-light;
+                border-color: #d58512;
+                background-color: #ec971f;
+            }
+        }
+
+        &__title
+        {
+            font-size: 1.5rem;
+            font-weight: 400;
+
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            text-align: left;
+
+            &--first
+            {
+                margin-top: 0;
+            }
+        }
+
+        &__thumbnail
+        {
+            margin-bottom: 0;
+        }
+
+        &__description
+        {
+            text-align: justify;
+        }
+
+        &__btn
+        {
+            float: right;
+
+            margin-bottom: $gap * 2;
+
+            color: $color-light;
+        }
+    }
+}
+
+.main-video
+{
+    width: 100%;
+    height: 100%;
+}
+
+.film-trailer,
+{
+    &-row
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    &-item
+    {
+        margin-bottom: 0;
+        padding: 0;
+
+        border: 1px solid $color-gray;
+        border-bottom: none;
+        border-radius: 4px 4px 0 0;
+
+        &-well
+        {
+            font-size: 1.2rem;
+
+            padding: 19px;
+
+            border-radius: 0 0 4px 4px;
+        }
+
+        &__info
+        {
+            white-space: nowrap;
+            &:not(:last-of-type)
+            {
+                margin-right: 15px;
+            }
+        }
+
+        &__badge
+        {
+            font-size: .96rem;
+        }
+    }
+}
+
+
+.leave-comment
+{
+    &__btn
+    {
+        float: right;
+
+        color: #fff;
+        border-color: #eea236;
+        background-color: #f0ad4e;
+    }
+}
