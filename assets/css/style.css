@@ -542,7 +542,8 @@ a.list-group-item:hover .badge, a.list-group-item:focus .badge {
   background-color: #232323;
 }
 
-.panel-title {
+.site-search-title,
+.user-login-title {
   display: none;
 }
 
