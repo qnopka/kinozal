@@ -58,14 +58,6 @@
   background-color: #df8a13;
 }
 
-.panel-info > .panel-heading__description {
-  font-size: 1.2rem;
-  letter-spacing: .1em;
-  color: #fff;
-  border: none;
-  background-color: #df8a13;
-}
-
 .panel-body {
   border: 1px solid #dddddd;
   border-radius: 0 0 4px 4px;
@@ -74,10 +66,6 @@
 .input-lg,
 .input-group-lg > .form-control {
   font-size: .875rem;
-}
-
-h2.panel-heading__title {
-  display: none;
 }
 
 html {
